@@ -3,6 +3,7 @@ date: '2025-08-10T01:00:00'
 title: 'Introducing Saorsail'
 description: 'Saorsail is a modern Web UI for the F-Droid app database. Includes a handy companion app.'
 thumbnail: /static/images/rants/2025-08-10-introducing-saorsail/screenshot.webp
+icon: /static/images/rants/2025-08-10-introducing-saorsail/icon.webp
 tags:
     - saorsail
     - android
