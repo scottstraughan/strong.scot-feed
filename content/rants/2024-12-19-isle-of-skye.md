@@ -2,7 +2,7 @@
 date: '2024-12-19T01:00:00'
 title: 'A Trip to Skye'
 description: 'It is becoming quite scary how incredible the performance of image generation is of modern LLMs.'
-thumbnail: /static/images/rants/2024-12-19-isle-of-skye/screenshot.webp
+thumbnail: /static/images/rants/2024-12-19-isle-of-skye/scotland.webp
 icon: /static/images/rants/2024-12-19-isle-of-skye/icon.webp
 tags:
     - travel

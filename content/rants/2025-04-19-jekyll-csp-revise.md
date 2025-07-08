@@ -25,20 +25,16 @@ and debug.
 The updated version of jekyll-csp introduces several new features, all aimed at improving control
 over how your CSP tags are generated:
 
-- **Custom Indentation and Newlines** 
-
+- **Custom Indentation and Newlines:**
   You can now specify how the plugin formats the generated <meta> tag, giving you fine-grained 
   control over whitespace, indentation style, and line breaks.
-- **Debug Mode** 
-
+- **Debug Mode:**
   Toggle debug mode on or off to output detailed logs during generation — useful for development and 
   troubleshooting.
-- **More Tag Customization**
-
+- **More Tag Customization:**
   It’s now easier to tweak the tag attributes themselves, giving you flexibility in how CSP is
   delivered in your HTML.
-- **Cleaner Codebase**
-
+- **Cleaner Codebase:**
   Internally, the code has been simplified and better structured, making future changes and community 
   contributions easier.
 
