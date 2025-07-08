@@ -6,16 +6,29 @@ from markdownfeeds.Gatherer import Gatherer
 from markdownfeeds.Generators import GeneratorSettings
 from markdownfeeds.Generators.Json.JsonFeedGenerator import JsonFeedGenerator
 from markdownfeeds.Generators.Json.Models.JsonFeed import JsonFeed
+from markdownfeeds.Generators.Json.Models.JsonFeedItem import JsonFeedItem
+from markdownfeeds.MarkdownFile import MarkdownFile
 
 logging.basicConfig(level=logging.INFO)
 
+
+class CustomFeedGenerator(JsonFeedGenerator):
+    def process_markdown_file_to_feed_item(
+        self,
+        markdown_file: MarkdownFile
+    ) -> JsonFeedItem:
+        feed_item = super().process_markdown_file_to_feed_item(markdown_file)
+        feed_item.set('content', markdown_file.html)
+        return feed_item
+
+
 Gatherer([
-    JsonFeedGenerator(
+    CustomFeedGenerator(
         feed=JsonFeed(title='Rants'),
         generator_settings=GeneratorSettings(
             source_directory='content/rants',
             target_directory='build/rants',
-            feed_items_per_export=20
+            feed_items_per_export=20,
         )
     ),
 ]).generate()
