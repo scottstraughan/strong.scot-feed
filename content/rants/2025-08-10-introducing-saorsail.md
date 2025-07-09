@@ -1,56 +1,70 @@
 ---
-date: '2025-08-10T01:00:00'
-title: 'Introducing Saorsail'
-description: 'Saorsail is a modern Web UI for the F-Droid app database. Includes a handy companion app.'
-thumbnail: /static/images/rants/2025-08-10-introducing-saorsail/screenshot.webp
-icon: /static/images/rants/2025-08-10-introducing-saorsail/icon.webp
+date: '2025-06-09T01:00:00'
+title: 'Introducing Scoredash'
+description: 'Track how well a user or organization is following open-source best practices.'
+thumbnail: /static/images/rants/2025-06-09-introducing-scoredash/screenshot.webp
+icon: /static/images/rants/2025-06-09-introducing-scoredash/icon.webp
 tags:
-    - saorsail
-    - android
-    - java
-    - angular
-    - webui
-    - f-droid
+  - scoredash
+  - angular
+  - trypescript
+  - open-source
+  - security
 ---
 
-We’re excited to announce the launch of Saorsail.com — a modern, fast, and privacy-respecting web
-app that lets you browse, search, and install Android apps directly from the trusted F-Droid
-database.
+I'm excited to announce the release of **[ScoreDash](https://www.scoredash.xyz)** —
+a powerful new tool that helps individuals and organizations assess how well they're following open
+source best practices.
 
-Whether you’re looking for open-source alternatives to mainstream apps or simply want an easy,
-clean interface to manage installs to your device, Saorsail has been built with you in mind.
+Whether you're maintaining a single repository or overseeing dozens across GitHub or GitLab,
+ScoreDash provides a clear, actionable overview of where you stand — and how you can improve.
 
-## 🌟 What is Saorsail?
+## 🧠 What Is ScoreDash?
 
-Saorsail is a fully customizable web app that puts the entire F-Droid ecosystem at your fingertips.
-It offers a smooth and responsive interface for discovering Android apps, all without tracking or
-ads.
+ScoreDash is a lightweight, user-friendly tool designed to evaluate your public repositories
+against a checklist of open source best practices. From documentation quality to license compliance
+and contribution guidelines, ScoreDash generates a comprehensive **adherence score** and offers *
+*tailored suggestions** for improvement.
 
-With Saorsail, you can:
-• 🔍 Search and filter through the full F-Droid catalog
-• ⚡ Install or download apps directly to your Android device
-• 🔄 Enjoy real-time updates with modern signals and caching
-• 🧩 Tailor the UI to your preferences thanks to its modular and customizable design
+Key features include:
 
-It’s powered by Angular and built with performance, usability, and openness at its core.
+- ✅ **GitHub and GitLab support**
+- 🌗 **Dark theme** for low-light environments
+- 🚀 **Fast performance** via smart caching
+- 🔍 **Searchable dashboards** to quickly find projects or users
+- 📈 **Score overviews** with improvement tips
+- 📱 **Progressive Web App (PWA)** support — install it like a native app
 
-## 📲 Why Saorsail?
+## ⚙️ How It Works
 
-We believe in software freedom and better user control. Existing solutions for browsing F-Droid
-apps often feel outdated or clunky — so we built Saorsail to be something better: a fast, modern
-interface that respects users and makes discovering quality open-source Android apps effortless.
+Just enter a GitHub or GitLab username or organization, and ScoreDash will:
 
-## 🔧 Under the Hood
+1. Scan all public repositories associated with the account
+2. Evaluate each repo using a set of open source best practice metrics
+3. Generate a **score summary** and highlight areas for improvement
+4. Present everything in a clean, searchable, responsive dashboard
 
-Saorsail is written in TypeScript using Angular, and uses cutting-edge features like signals and
-local caching to deliver an experience that feels snappy and native. You can install it as a PWA (
-Progressive Web App) for even faster access on mobile.
+You can also revisit your results later — ScoreDash uses **caching** to speed up repeated lookups
+without sacrificing freshness.
 
-## 🛠 Try it now
+## 🔍 Why ScoreDash?
 
-Visit saorsail.com to try it out — no account required, and nothing to install.
+Open source success isn't just about writing code — it's also about fostering collaboration,
+encouraging contributions, and maintaining a healthy, transparent development environment.
+ScoreDash was created to make those best practices measurable and accessible for everyone.
 
-We hope you enjoy using it as much as we enjoyed building it. If you have feedback, ideas, or
-feature requests, we’d love to hear from you.
+Whether you're an individual developer, an open source maintainer, or part of a larger dev team,
+ScoreDash can help you:
 
-Welcome to a better way to discover Android apps. Welcome to Saorsail.
+- Quickly audit your public repositories
+- Improve visibility into project health
+- Benchmark your open source presence over time
+
+## 🚀 Try It Now
+
+ScoreDash is completely open source and available today on GitHub:
+
+🔗 [https://github.com/scottstraughan/openssf-scorecard-dashboard](https://github.com/scottstraughan/openssf-scorecard-dashboard)
+
+
+Check your score at <https://www.scoredash.xyz>.
