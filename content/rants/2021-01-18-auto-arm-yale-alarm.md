@@ -11,30 +11,87 @@ tags:
   - automation
 ---
 
-I love my Yale home alarm system. The system has been rock solid, aside from a few annoying usability quirks, but there is one core feature missing - scheduling. It is a pain in the ass to have to manually arm the system every single night. Rarely do I ever enter/leave my house between the hours of 12:00pm and 6:00am so it makes total sense to always have the system part-armed (where only the door/window sensors are armed - not the motion sensors) during these times. I discovered an excellent Python wrapper that provides a simple and easy way to arm and disarm the system using the Yale account email address and password. Only thing missing, a way to run the script at specific times, provide a notification of the new change of state and a system to host the script so it will always be available. 
+I'm a big fan of the **Yale Home Alarm System**. It's been incredibly reliable and effective for
+securing my home. While the hardware and connectivity are solid, there’s one key feature that’s
+notably absent — **scheduling**.
 
-I will shorlty be posting a blog that details how you can get this to work using AWS, but for now, we will focus on using a Docker container that can run on any PC, or in my case, a Rasberry PI 4B that I am using as my NAS device.
+Arming the system manually every night is tedious. Like many people, I rarely enter or exit my home
+between **12:00 AM and 6:00 AM**, so it would be ideal for the system to automatically enter
+*part-arm* mode (activating door/window sensors but leaving motion sensors disabled) during those
+hours.
 
-![Screenshot](/static/images/rants/2021-01-18-auto-arm-yale-alarm/thumbnail.webp)
+### The Problem
 
-## Get Its Working
+Yale's app does not offer native scheduling capabilities. Thankfully, I came across an excellent *
+*Python wrapper** for the Yale API, which allows you to arm and disarm the system using your Yale
+credentials.
 
-1. Clone my GitHub repo.
+However, I needed more than just the ability to send commands:
 
-    ```git clone https://github.com/scottstraughan/yale-alarm-scheduler.git```
+- A way to schedule actions automatically.
+- Notifications confirming the alarm's state change.
+- A persistent environment to host the script.
 
-2. Install [Docker](https://www.docker.com)
-3. If you are using Windows, install gitbash - just makes life easier.
-4. Change into the cloned repo:
+### The Solution
 
-    ```cd yale-alarm-scheduler```
-5. Update the ```config.json``` file with your credentails and schedule (there are examples of how to do this in the config file). If you wish to have email notifications sent to you when the system is armed or disarmed, please propogate the values for "send_grid" (SendGrid is a super easy way to send emails from an API. You can create a FREE account and get hundreds of free emails per month to use).
-5. Build the docker image using the provider Dockerfile:
+To address these needs, I created a lightweight automation setup using **Docker**, which can be
+deployed on any local machine. In my case, I run it on a **Raspberry Pi 4B** that doubles as a home
+NAS.
 
-    ```docker build -t yale-alarm-scheduler .```
-6. Create a new container instance based on the previously created image:
+A future post will cover how to deploy this using **AWS Lambda** for a fully cloud-based solution,
+but for now, here’s how to get it running locally.
 
-    ```docker run --rm yale-alarm-scheduler```
-7. Done. The system should now be running and will automatically arm/disarm based on your schedule.
+## Getting Started
 
-**Next up, AWS Lambda!**
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/scottstraughan/yale-alarm-scheduler.git
+```
+
+### 2. Install Docker
+
+Download and install Docker for your platform from [docker.com](https://www.docker.com).
+
+> **Optional (Windows):** Installing [Git Bash](https://git-scm.com/downloads) is recommended for
+> smoother command-line usage.
+
+### 3. Navigate to the Project Directory
+
+```bash
+cd yale-alarm-scheduler
+```
+
+### 4. Configure Your Credentials and Schedule
+
+Edit the `config.json` file to:
+
+- Add your Yale account credentials
+- Define your arming/disarming schedule
+- (Optional) Configure **SendGrid** to receive email notifications upon state changes
+
+> _SendGrid offers a free tier that supports hundreds of emails per month — perfect for sending
+lightweight notifications._
+
+### 5. Build the Docker Image
+
+```bash
+docker build -t yale-alarm-scheduler .
+```
+
+### 6. Run the Container
+
+```bash
+docker run --rm yale-alarm-scheduler
+```
+
+Once running, the scheduler will automatically arm or disarm your system based on the specified
+configuration.
+
+## What’s Next?
+
+This local setup is ideal for personal use on home hardware like a Raspberry Pi. For users looking
+for a **cloud-native solution**, I’ll be publishing a follow-up post demonstrating how to deploy
+this project using **AWS Lambda** — enabling a truly headless, always-on automation flow.
+
+**Stay tuned!**
