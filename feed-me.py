@@ -4,6 +4,7 @@ import logging
 
 from markdownfeeds.Gatherer import Gatherer
 from markdownfeeds.Generators import GeneratorSettings
+from markdownfeeds.Generators.Default.Models.FeedItem import FeedItem
 from markdownfeeds.Generators.Json.JsonFeedGenerator import JsonFeedGenerator
 from markdownfeeds.Generators.Json.Models.JsonFeed import JsonFeed
 from markdownfeeds.Generators.Json.Models.JsonFeedItem import JsonFeedItem
@@ -13,6 +14,13 @@ logging.basicConfig(level=logging.INFO)
 
 
 class CustomFeedGenerator(JsonFeedGenerator):
+    def _sort_feed_items(
+        self,
+        feed_items: [FeedItem]
+    ) -> [FeedItem]:
+        feed_items.sort(key=lambda item: item.get('date'), reverse=True)
+        return feed_items
+
     def process_markdown_file_to_feed_item(
         self,
         markdown_file: MarkdownFile
