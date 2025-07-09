@@ -1,9 +1,9 @@
 ---
-date: '2025-06-09T01:00:00'
+date: '2025-04-09T01:00:00'
 title: 'Introducing Scoredash'
 description: 'Track how well a user or organization is following open-source best practices.'
-thumbnail: /static/images/rants/2025-06-09-introducing-scoredash/screenshot.webp
-icon: /static/images/rants/2025-06-09-introducing-scoredash/icon.webp
+thumbnail: /static/images/rants/2025-04-09-introducing-scoredash/screenshot.webp
+icon: /static/images/rants/2025-04-09-introducing-scoredash/icon.webp
 tags:
   - scoredash
   - angular
