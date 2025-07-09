@@ -1,9 +1,9 @@
 ---
-date: '2025-01-02T01:00:00'
+date: '2025-06-20T01:00:00'
 title: 'AI Warcraft Wallpapers'
 description: 'It is becoming quite scary how incredible the performance of image generation is of modern LLMs.'
-thumbnail: /static/images/rants/2025-01-02-ai-warcraft-wallpapers/elwynn.webp
-icon: /static/images/rants/2025-01-02-ai-warcraft-wallpapers/icon.webp
+thumbnail: /static/images/rants/2025-06-20-ai-warcraft-wallpapers/elwynn.webp
+icon: /static/images/rants/2025-06-20-ai-warcraft-wallpapers/icon.webp
 tags:
     - warcraft
     - wallpapers
