@@ -27,10 +27,11 @@ It offers a smooth and responsive interface for discovering Android apps, all wi
 ads.
 
 With Saorsail, you can:
-• 🔍 Search and filter through the full F-Droid catalog
-• ⚡ Install or download apps directly to your Android device
-• 🔄 Enjoy real-time updates with modern signals and caching
-• 🧩 Tailor the UI to your preferences thanks to its modular and customizable design
+
+- 🔍 Search and filter through the full F-Droid catalog
+- ⚡ Install or download apps directly to your Android device
+- 🔄 Enjoy real-time updates with modern signals and caching
+- 🧩 Tailor the UI to your preferences thanks to its modular and customizable design
 
 It’s powered by Angular and built with performance, usability, and openness at its core.
 
