@@ -2,7 +2,7 @@
 date: '2023-07-05T01:00:00'
 title: 'Release of SYCL.tech'
 description: 'A few days ago I released sycl.tech Angular, a re-work of the old sycl.tech website.'
-thumbnail: /static/images/rants/2024-07-05-release-of-sycl-tech/screenshot.webp
+thumbnail: /static/images/rants/2024-07-05-release-of-sycl-tech/thumbnail.webp
 icon: /static/images/rants/2024-07-05-release-of-sycl-tech/icon.webp
 tags:
   - sycl
