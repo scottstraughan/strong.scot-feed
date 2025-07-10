@@ -13,8 +13,8 @@ tags:
 
 [View the UXL Foundation 2024 Report](https://oneapi.io/wp-content/uploads/2024/12/UXL-Foundation-Annual-Report-2024.pdf)
 
-As part of my work at **Codeplay Software**, I had the awesome opportunity to take the reins on the
-design of the **2024 UXL Foundation Annual Report** — and I’m really proud of how it turned out!
+As part of my work at Codeplay Software, I had the awesome opportunity to take the reins on the
+design of the 2024 UXL Foundation Annual Report — and I’m really proud of how it turned out!
 
 I was responsible for the full creative direction, including:
 
@@ -23,10 +23,10 @@ I was responsible for the full creative direction, including:
 - 🖌️ **Styling**
 
 Every detail — from colour choices to page flow — was carefully crafted to reflect the bold,
-forward-looking identity of the **UXL Foundation**. I made sure the design stayed true to their
+forward-looking identity of the UXL Foundation. I made sure the design stayed true to their
 established brand, using the full palette and vibe that makes UXL so distinctive.
 
-The end result? A sleek, vibrant, and fully polished **PDF report**, professionally formatted and
+The end result? A sleek, vibrant, and fully polished PDF report, professionally formatted and
 distributed widely across digital channels.
 
 ### A Few Highlights:
