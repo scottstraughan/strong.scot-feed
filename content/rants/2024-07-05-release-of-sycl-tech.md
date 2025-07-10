@@ -27,13 +27,13 @@ it’s a living, responsive, and developer-friendly platform.
 **sycl.tech** offers a wide range of tools and content for both beginners and seasoned SYCL
 developers:
 
-- 🔍 **Project Explorer** – Browse SYCL-related projects, videos, research papers, and more through
+- **Project Explorer** – Browse SYCL-related projects, videos, research papers, and more through
   a slick UI with full **filtering, searching, and tagging** support.
-- 💻 **SYCL Playground** – Write, compile, and run SYCL code right in the browser. Inspect **console
+- **SYCL Playground** – Write, compile, and run SYCL code right in the browser. Inspect **console
   output** and even **view the compiled assembly**.
-- 📰 **SYCL News Feed** – Stay up to date with the latest developments across the SYCL ecosystem.
-- 📚 **Tutorials Section** – Learn SYCL step-by-step with approachable guides and code examples.
-- 🧩 **...And More** – With a growing set of features designed to make SYCL more accessible and
+- **SYCL News Feed** – Stay up to date with the latest developments across the SYCL ecosystem.
+- **Tutorials Section** – Learn SYCL step-by-step with approachable guides and code examples.
+- **...And More** – With a growing set of features designed to make SYCL more accessible and
   collaborative.
 
 ## Built with Angular — The Tech Behind the Scenes
@@ -50,9 +50,10 @@ This project is written using the latest Angular, taking full advantage of:
 
 One of the most exciting aspects of this project is its structure:
 
-- The project is split into **two repos**:
-    1. [sycl.tech-website](https://github.com/codeplaysoftware/sycl.tech-website) – the Angular front-end
-    2. [sycl.tech-content](https://github.com/codeplaysoftware/sycl.tech-content) – the content repo, containing structured data (YAML/JSON/etc.)
+The project is split into **two repos**:
+
+1. [sycl.tech-website](https://github.com/codeplaysoftware/sycl.tech-website) – the Angular front-end
+2. [sycl.tech-content](https://github.com/codeplaysoftware/sycl.tech-content) – the content repo, containing structured data (YAML/JSON/etc.)
 
 When updates are made to the content repo, the front-end **automatically rebuilds** — allowing the
 site to behave like a dynamic app **without requiring a backend**. This hybrid approach makes the
