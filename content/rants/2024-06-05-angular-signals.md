@@ -1,11 +1,12 @@
 ---
-date: 2022-01-05
+date: '2024-06-05T01:00:00'
 title: "Angular 16+ Signals"
 description: "Dumping some of my thoughts on Angular Signals."
 thumbnail: /static/images/rants/2024-06-05-angular-signals/thumbnail.webp
 icon: /static/images/rants/2024-06-05-angular-signals/icon.webp
 tags: [angular, signals, frontend, thoughts]
 ---
+
 
 Angular has long relied on RxJS and its `Observable`-based model for handling reactivity. But with
 the introduction of **Signals** in Angular 16+, the framework is embracing a new paradigm that
