@@ -1,7 +1,7 @@
 ---
 date: '2022-01-05T01:00:00'
-title: "OMV Home Media Server"
-description: "A small writeup of my home media server using OpenMediaVault."
+title: 'OMV Home Media Server'
+description: 'A small writeup of my home media server using OpenMediaVault.'
 thumbnail: /static/images/rants/2022-01-05-home-media-server-omv/thumbnail.webp
 icon: /static/images/rants/2022-01-05-home-media-server-omv/icon.webp
 tags: [openmediavault, self-hosting, homelab]
