@@ -15,15 +15,13 @@ from slugify import slugify
 
 logging.basicConfig(level=logging.INFO)
 
-site_base_url = 'https://www.strong.scot'
-
 
 def generate_routes_file(
     generator_settings: GeneratorSettings,
     collection: str,
     feed_items: [FeedItem]
 ):
-    routes = [f"{site_base_url}/{collection}/{x.get('tag')}" for x in feed_items]
+    routes = [f"/{collection}/{x.get('tag')}" for x in feed_items]
     target_routes_file = os.path.join(generator_settings.get('target_directory'), 'routes.txt')
     write_to_file(target_routes_file, os.linesep.join(routes))
 
