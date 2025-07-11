@@ -28,7 +28,7 @@ jobs:
     - name: Generate Feeds
       run: |
         # Generate the JSON Feeds
-        python feed-me.py
+        python feed.py
     - name: Copy Generate Feeds
       run: |
         mkdir feed
