@@ -51,3 +51,16 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e
+
+  # Trigger the front-end to rebuild
+  rebuild-frontend:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Front-End
+        uses: convictional/trigger-workflow-and-wait@f69fa9eedd3c62a599220f4d5745230e237904be
+        with:
+          owner: scottstraughan
+          repo: strong.scot
+          github_token: ${{ secrets.FRONT_END_REBUILD_TOKEN }}
+          workflow_file_name: build.yml
