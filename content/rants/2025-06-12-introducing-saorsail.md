@@ -13,7 +13,7 @@ tags:
     - f-droid
 ---
 
-![Saorsail.com](/static/images/rants/2025-06-12-introducing-saorsail/screenshot.webp)
+![Saorsail.com](https://feed.strong.scot/static/images/rants/2025-06-12-introducing-saorsail/screenshot.webp)
 
 I am excited to announce the launch of Saorsail.com — a modern, fast, and privacy-respecting web
 app that lets you browse, search, and install Android apps directly from the trusted F-Droid
