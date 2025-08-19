@@ -13,7 +13,7 @@ tags:
   - codeplay
 ---
 
-![Screenshot](https://feed.strong.scot/static/images/rants/2024-07-05-release-of-sycl-tech/screenshot.png)
+![Screenshot](/static/images/rants/2024-07-05-release-of-sycl-tech/screenshot.png)
 
 Over the past few months, I've been building something that brings together the SYCL ecosystem in a
 fresh, accessible way: **[sycl.tech](https://sycl.tech)** — an open source web app for exploring,

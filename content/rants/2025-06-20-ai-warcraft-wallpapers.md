@@ -37,8 +37,8 @@ you didn’t know you’d miss so much.
 Here’s to the old days. To the ones we lost along the way. And to the world that still waits,
 pixel-perfect and timeless, just beyond the login screen.
 
-![Mulgore](https://feed.strong.scot/static/images/rants/2025-06-20-ai-warcraft-wallpapers/elwynn.webp)
-![Razor Hill](https://feed.strong.scot/static/images/rants/2025-06-20-ai-warcraft-wallpapers/razor-hill.png)
-![Stonetalon](https://feed.strong.scot/static/images/rants/2025-06-20-ai-warcraft-wallpapers/stonetalon.png)
-![The Barrens](https://feed.strong.scot/static/images/rants/2025-06-20-ai-warcraft-wallpapers/barrens.png)
-![Un'Goro Crater](https://feed.strong.scot/static/images/rants/2025-06-20-ai-warcraft-wallpapers/un-goro-crater.png)
+![Mulgore](/static/images/rants/2025-06-20-ai-warcraft-wallpapers/elwynn.webp)
+![Razor Hill](/static/images/rants/2025-06-20-ai-warcraft-wallpapers/razor-hill.png)
+![Stonetalon](/static/images/rants/2025-06-20-ai-warcraft-wallpapers/stonetalon.png)
+![The Barrens](/static/images/rants/2025-06-20-ai-warcraft-wallpapers/barrens.png)
+![Un'Goro Crater](/static/images/rants/2025-06-20-ai-warcraft-wallpapers/un-goro-crater.png)
