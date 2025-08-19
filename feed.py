@@ -68,8 +68,6 @@ class CustomFeedGenerator(JsonFeedGenerator):
             if not src.startswith('http'):
                 img['src'] = BASE_URL + '/' + src.lstrip('/')
 
-            print(img['src'])
-
         return feed_item
 
     @staticmethod
