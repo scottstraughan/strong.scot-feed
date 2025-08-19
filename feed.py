@@ -62,11 +62,13 @@ class CustomFeedGenerator(JsonFeedGenerator):
         """
         soup = BeautifulSoup(feed_item.get('content'), "html.parser")
 
-        for img in soup.find_all("img"):
+        for img in soup.find_all(['img', 'source']):
             src = img.get("src")
 
             if not src.startswith('http'):
                 img['src'] = BASE_URL + '/' + src.lstrip('/')
+
+            print(img['src'])
 
         return feed_item
 
