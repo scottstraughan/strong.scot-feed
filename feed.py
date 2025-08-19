@@ -3,6 +3,7 @@
 import logging
 import os
 
+from bs4 import BeautifulSoup
 from markdownfeeds import write_to_file
 from markdownfeeds.Gatherer import Gatherer
 from markdownfeeds.Generators import GeneratorSettings
@@ -14,6 +15,9 @@ from markdownfeeds.MarkdownFile import MarkdownFile
 from slugify import slugify
 
 logging.basicConfig(level=logging.INFO)
+
+# Base URL for the feeds
+BASE_URL = 'https://feed.strong.scot'
 
 
 def generate_routes_file(
@@ -46,6 +50,24 @@ class CustomFeedGenerator(JsonFeedGenerator):
         feed_item = super().process_markdown_file_to_feed_item(markdown_file)
         feed_item.set('content', markdown_file.html)
         feed_item.set('tag', CustomFeedGenerator.create_tag(feed_item))
+        feed_item = self.process_images(feed_item)
+        return feed_item
+
+    def process_images(
+        self,
+        feed_item: JsonFeedItem
+    ) -> JsonFeedItem:
+        """
+        Ensure images use a fully qualified URL.
+        """
+        soup = BeautifulSoup(feed_item.get('content'), "html.parser")
+
+        for img in soup.find_all(['img', 'source']):
+            src = img.get("src")
+
+            if not src.startswith('http'):
+                img['src'] = BASE_URL + '/' + src.lstrip('/')
+
         return feed_item
 
     @staticmethod
@@ -53,7 +75,6 @@ class CustomFeedGenerator(JsonFeedGenerator):
         feed_item: FeedItem
     ) -> str:
         date = feed_item.markdown_file.date.strftime("%Y-%m-%d")
-
         return slugify(date + '-' + feed_item.get('title'))
 
 
